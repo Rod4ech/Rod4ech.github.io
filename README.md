@@ -8,6 +8,7 @@ https://pages.github.com
 
 In a nutshell:
 In the local folder, add the files needed to the local repo (E.g. new .png files, etc).
+
 0) Use the Terminal to open the local cd desktop... 
 1) Use the Terminal to add them to the local repo: git add .
 2) Use the Terminal to commit the changes: git commit -m "3rd commit"
