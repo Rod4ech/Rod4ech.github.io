@@ -1,0 +1,41 @@
+/* El siguiente comando es para rotar la imagen "x" grados
+img {
+ transform: rotate(-1deg);
+ }
+ */
+ img {
+	padding:2px; background-color: #009966;
+	/* border:2px solid #ff0000; */
+	margin:3px;
+ }
+
+ body {
+	/* background-image: url("../images/background.jpg"); */
+	background-image: url("background.jpg");
+	margin:5px;
+}
+ 
+/*
+ul{
+	list-style-image:url("../images/Bullet_for_3_items.gif"); 
+	font-size:18px;
+}
+
+table, td, th {
+	height:10px;
+	padding:3px;
+	border:2px solid green;
+	text-align:center;
+	vertical-align:middle;
+}
+*/
+
+th{ 
+	 background-color:red; color:white; 
+}
+
+/* Posible opcion para rotar videos "x" grados
+video {
+ transform: rotate(90deg);
+ }
+ */
