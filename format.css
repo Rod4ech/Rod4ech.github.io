@@ -30,7 +30,7 @@ table, td, th {
 */
 
 table {margin:0 auto;}
-table td{text-align:center;background-color:#b7c9e1;font-size:25px; border-radius: 0px 25px 5px 10px;
+table td{text-align:center;background-color:#b7c9e1;font-size:32px; border-radius: 0px 25px 5px 10px;
 border-style:outset;border-width:2px;}
 
 th{background-color:red; color:white;}
