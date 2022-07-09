@@ -10,9 +10,10 @@ img {
  }
 
  body {
+	background-color: lightblue;
 	/* background-image: url("../images/background.jpg"); */
-	background-image: url("background.jpg");
-	margin:5px;
+	/* background-image: url("background.jpg"); */
+	/* margin:5px; */
 }
  
 /*
