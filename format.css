@@ -3,18 +3,22 @@ img {
  transform: rotate(-1deg);
  }
  */
+ 
+  table {margin:0 auto;}
+table td{text-align:center;background-color:#b7c9e1;font-size:32px; border-style:outset;border-width:2px;}
+
+/* th{background-color:red; color:white;} */
+
  img {
-	padding:2px; background-color: #009966;
-	/* border:2px solid #ff0000; */
-	margin:3px;
+	margin:6px;
  }
 
- body {
+/*  body {
 	background-color: lightblue;
-	/* background-image: url("../images/background.jpg"); */
-	/* background-image: url("background.jpg"); */
-	/* margin:5px; */
-}
+	background-image: url("../images/background.jpg");
+	background-image: url("background.jpg");
+	margin:5px;
+} */
  
 /*
 ul{
@@ -30,21 +34,11 @@ table, td, th {
 }
 */
 
-table {margin:0 auto;}
-table td{text-align:center;background-color:#b7c9e1;font-size:32px; border-radius: 0px 25px 5px 10px;
-border-style:outset;border-width:2px;}
-
-th{background-color:red; color:white;}
-
 /* Posible opcion para rotar videos "x" grados
 video {
  transform: rotate(90deg);
  }
  */
-
-th{ 
-	 background-color:red; color:white; 
-}
 
 /* Posible opcion para rotar videos "x" grados
 video {
