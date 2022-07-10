@@ -5,10 +5,43 @@
 	<!-- REC: The two below lines included to improve performance based on device. 
 	See: https://web.dev/viewport/?utm_source=lighthouse&utm_medium=devtools 
 	And: https://web.dev/meta-description/?utm_source=lighthouse&utm_medium=devtools-->
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<!-- REC: The line commented out because it spoils the layout on mobile.
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 	<meta name="description" content="Just a simple page to quickly access some relevant online resources">
-	<link rel="stylesheet" type="text/css" href="format.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="format.css" /> -->
+	<!-- REC: The line commented out because the simple styling is below. -->
     <title>My QuickLinks</title>
+	
+	<style>
+	body {
+	background-color:lightblue; 
+	text-align:center;
+	}
+	
+	table {
+	width: 95%;
+	margin: 20px auto;
+	}
+	
+	td {
+	background-color:#b7c9e1;
+	border-style:outset;
+	border-width:2px;
+	font-size:32px;
+	}
+	
+	div {
+	width: 95%;
+  	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	img {
+	padding:2px; 
+	margin:2px;
+	}
+
+	</style>
 </head>
 
 <body>

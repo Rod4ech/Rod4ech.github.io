@@ -4,18 +4,23 @@ img {
  }
  */
  
-table {margin:0 auto;}
-table td{background-color:#b7c9e1;font-size:32px; border-style:outset;border-width:2px;}
+/* table {margin:0 auto;} */
+/* table {width: 80%; margin:20px;} */
+/* table td{background-color:#b7c9e1;font-size:32px; border-style:outset;border-width:2px;} */
+/* table td{background-color:#b7c9e1;border-style:outset;border-width:2px;} */
 
 /* th{background-color:red; color:white;} */
 
- img {
+/*  img {
 	padding:2px; margin:2px;
- }
+ } */
 
-body {
-	background-color:lightblue; text-align:center;
-}
+/* body {
+	width: 80%; 
+	margin:100px;
+	background-color:lightblue; 
+	text-align:center; 
+} */
  
 /* body {
 	background-color: lightblue;
