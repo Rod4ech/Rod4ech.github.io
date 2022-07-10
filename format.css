@@ -4,16 +4,20 @@ img {
  }
  */
  
-  table {margin:0 auto;}
-table td{text-align:center;background-color:#b7c9e1;font-size:32px; border-style:outset;border-width:2px;}
+table {margin:0 auto;}
+table td{background-color:#b7c9e1;font-size:32px; border-style:outset;border-width:2px;}
 
 /* th{background-color:red; color:white;} */
 
  img {
-	margin:6px;
+	padding:2px; margin:2px;
  }
 
-/*  body {
+body {
+	background-color:lightblue; text-align:center;
+}
+ 
+/* body {
 	background-color: lightblue;
 	background-image: url("../images/background.jpg");
 	background-image: url("background.jpg");
@@ -33,12 +37,6 @@ table, td, th {
 	vertical-align:middle;
 }
 */
-
-/* Posible opcion para rotar videos "x" grados
-video {
- transform: rotate(90deg);
- }
- */
 
 /* Posible opcion para rotar videos "x" grados
 video {
