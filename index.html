@@ -2,15 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-	<!-- REC: The two below lines included to improve performance based on device. 
-	See: https://web.dev/viewport/?utm_source=lighthouse&utm_medium=devtools 
-	And: https://web.dev/meta-description/?utm_source=lighthouse&utm_medium=devtools-->
-	<!-- REC: The line commented out because it spoils the layout on mobile.
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Just a simple page to quickly access some relevant online resources">
-	<!-- <link rel="stylesheet" type="text/css" href="format.css" /> -->
-	<!-- REC: The line commented out because the simple styling is below. -->
     <title>My QuickLinks</title>
+	<link rel="icon" type="image/x-icon" href="favicon.webp">
 	
 	<style>
 	body {
@@ -18,27 +13,53 @@
 	text-align:center;
 	}
 	
+	/* REC: Below styling to center the table */
 	table {
-	width: 95%;
-	margin: 20px auto;
+	width: 90%;
+	margin: auto;
 	}
 	
+	/* REC: Below styling to present the content (data) of the table */
 	td {
 	background-color:#b7c9e1;
 	border-style:outset;
 	border-width:2px;
-	font-size:32px;
 	}
 	
-	div {
-	width: 95%;
-  	margin-left: auto;
-	margin-right: auto;
+	/* REC: Below styling based on Media Queries to present for Typical Device Breakpoints */
+	/* If the screen size is 600px or less (small phones, 600px and down), set the font-size of <td> to 12px */
+	@media only screen and (max-width: 600px) {
+		td, h1, h2 {
+    font-size: 12px;
+		}
+	}	
+	
+	/* If the screen size is 600px or more (large phones and tablets, 600px and up), set the font-size of <td> to 24px */
+	@media only screen and (min-width: 600px) {
+		td, h1, h2 {
+    font-size: 24px;
+		}
+	}
+
+	/* If the screen size is 992px or more (laptops/desktops, 992px and up), set the font-size of <td> to 32px */
+	@media only screen and (min-width: 992px) {
+		td, h1, h2 {
+    font-size: 32px;
+		}
 	}
 	
+	/* If the screen size is 1200px or more (Extra Large Devices, 1200px and up), set the font-size of <td> to 40px */
+	@media only screen and (min-width: 1200px) {
+		td, h1, h2 {
+    font-size: 40px;
+		}
+	}
+	
+	/* REC: Below styling to present the images centered and responsive */
 	img {
-	padding:2px; 
 	margin:2px;
+	width: 18%;
+	height: auto;
 	}
 
 	</style>
@@ -74,8 +95,8 @@
     <h1><mark>Lavoro</mark></h1>
     <!-- <a href="https://www.ecosia.org/" target="_blank"><img src="ecosia.webp" alt="Ecosia Icon" width="180" height="70"/></a> -->
     <a href="https://www.google.com.au/" target="_blank"><img src="Google.webp" alt="Google Icon" width="180" height="70"/></a>
-    <a href="https://myactivity.google.com/myactivity" target="_blank"><img src="myact.webp" alt="My Google Activity Icon" width="180" height="70" /></a>
-    <a href="https://drive.google.com/drive/my-drive" target="_blank"><img src="gd.webp" alt="Google Drive Icon" width="180" height="70" /></a>
+    <a href="https://myactivity.google.com/myactivity" target="_blank"><img src="myact.webp" alt="My Google Activity Icon" width="180" height="70"/></a>
+    <a href="https://drive.google.com/drive/my-drive" target="_blank"><img src="gd.webp" alt="Google Drive Icon" width="180" height="70"/></a>
     <a href="https://onedrive.live.com/" target="_blank"><img src="onedrive.webp" alt="One Drive Icon" width="180" height="70" /></a>
     <a href="https://app.slack.com/client/TBU04PEUR/CBVHJN423" target="_blank"><img src="slack_logo.webp" alt="Slack Icon" width="180" height="70" /></a>
     <a href="https://mail.google.com" target="_blank"><img src="gmail.webp" alt="Gmail Icon" width="180" height="70" /></a>
@@ -164,10 +185,10 @@
 	
 	<div id="Tavola periodica">
     <h1><mark>Tavola periodica</mark></h1>
-    <a href="https://elements.wlonk.com/ElementsTable.htm" target="_blank"><img src="pt1.webp" alt="Periodic Table 1 Icon" width="290" height="64"/></a>
-    <a href="https://www.fishersci.com/us/en/periodic-table.html" target="_blank"><img src="pt2.webp" alt="Periodic Table 2 Icon" width="132" height="64"/></a>
-    <a href="https://www.thoughtco.com/clickable-periodic-table-of-the-elements-3891282" target="_blank"><img src="3.webp" alt="Periodic Table 3 Icon" width="57" height="64"/></a>
-    <a href="https://www.thoughtco.com/how-to-use-a-periodic-table-608807" target="_blank"><img src="4.webp" alt="Periodic Table 4 Icon" width="48" height="64"/></a>
+    <a href="https://elements.wlonk.com/ElementsTable.htm" target="_blank"><img src="pt1.webp" alt="Illustrated Periodic Table Link" width="290" height="64"/></a>
+    <a href="https://www.fishersci.com/us/en/periodic-table.html" target="_blank"><img src="pt2.webp" alt="Interactive Periodic Table Link" width="132" height="64"/></a>
+    <a href="https://www.thoughtco.com/clickable-periodic-table-of-the-elements-3891282" target="_blank"><img src="thought.webp" alt="ThoughtCo Periodic Table Link" width="57" height="64"/></a>
+    <a href="https://www.thoughtco.com/how-to-use-a-periodic-table-608807" target="_blank"><img src="4.webp" alt="How to use link" width="48" height="64"/></a>
     <a href="https://www.thoughtco.com/element-and-periodic-table-quizzes-607529" target="_blank"><img src="ptq.webp" alt="Periodic Table Quiz Icon" width="172" height="64"/></a>
 	<hr />
 	<h2><a href="#">Ritorno al Menu</a></h2>
